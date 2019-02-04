@@ -36,11 +36,11 @@
 
     };
 
-    window.backCountries.load = function (onLoad, onError) {
+   /* window.backCountries.load = function (onLoad, onError) {
         var request = getData(onLoad, onError);
         request.open('GET', DATA_URL);
         request.send();
-    };
+    };*/
 
     window.backCountries.load(showInfo, window.error.errorHandler);
 

@@ -12,18 +12,18 @@
     };
     window.backCountries = {};
 
-    var getData = function (onLoad, onError) {
+   var getData = function (onLoad, onError) {
         var request = new XMLHttpRequest();
         request.responseType = 'json';
         request.timeout = TIMEOUT;
-        /*request.addEventListener('load', function () {
+        request.addEventListener('load', function () {
             if (request.status === 200) {
                 onLoad(request.response);
                 console.log(request.response);
             } else {
                 onError('Статус ответа: ' + request.status + ' ' + request.statusText);
             }
-        });*/
+        });
 
         request.addEventListener('load', function () {
 
@@ -61,7 +61,7 @@
             onError('Запрос не успел выполниться за ' + request.timeout + 'мс');
         });
         return request;
-    }
+    };
 
     window.backCountries.load = function (onLoad, onError) {
         var request = getData(onLoad, onError);
