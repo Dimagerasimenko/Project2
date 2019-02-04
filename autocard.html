@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Б/у автомобили</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="logo">
+    <h2><a href="index.html">Продажа авто с пробегом</a></h2>
+</div>
+<div class="menu">
+    <nav>
+        <ul>
+            <li><a href="index.html" >Главная</a></li>
+            <li><a href="#">Новые автомобили</a></li>
+            <li><a href="#" class="menu-active">Б/у автомобили</a></li>
+            <li><a href="#">Сервис</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="formA">
+  <form action="post" class="form-auto">
+    <label class="file-upload">
+      <input type="file" name="name" value="loadPhoto" class="photo-button">
+      <span>Выберите файл</span>
+    </label>
+    <div class="photo">
+      <img src="..\img\arrow-back.png" alt="">
+      <span class="photo-error"></span>
+    </div>
+  </form>
+</div>
+<div class="box-sell">
+  <div class="box-sell_form">
+    <form action="post" class="sell-auto">
+      <h2>Новое объявление</h2>
+      <div class="change-auto">
+          <label>Марка автомобиля:
+            <select class="list-auto" name="sell-suto_item">
+              <option value="Mercedes">Mercedes</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Ford">Ford</option>
+            </select>
+          </label>
+      </div>
+      <div class="change-auto">
+          <label>Модель:
+            <select class="list-auto" name="sell-suto_item">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+      </div>
+      <div class="change-auto">
+          <label>Год выпуска:
+            <select class="list-auto" name="sell-suto_item">
+              <option value="1999">1999</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+            </select>
+          </label>
+      </div>
+      <div class="change-auto">
+          <label>Тип  кузова:
+            <select class="list-auto" name="sell-suto_item">
+              <option value="sedan">Седан</option>
+              <option value="universl">Универсал</option>
+              <option value="jeep">Джип</option>
+            </select>
+          </label>
+      </div>
+      <div class="change-auto">
+        <span>Состояние:</span>
+          <label>С пробегом
+            <input type="checkbox" name="option1" value="1" checked>
+          </label>
+          <label>С повреждениями
+            <input type="checkbox" name="option2" value="2">
+          </label>
+          <label>На запчасти
+            <input type="checkbox" name="option3" value="3">
+          </label>
+      </div>
+      <div class="change-auto">
+          <label>
+            Цена:<input type="text" name="price" value="">
+            <select class="list-auto" name="sell-suto_item">
+              <option value="dollar">$</option>
+              <option value="euro">Euro</option>
+              <option value="rub">Rub</option>
+            </select>
+          </label>
+      </div>
+    </form>
+    <div class="sell-auto_info">
+      <p>Нет нужной марки или модели?</p>
+      <p>Обратитесь в техподдержку и мы оперативно ее добавим.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+<script type="text/javascript" src="..\js\testcard\loadImg.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.top-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo a {
+    text-decoration: none;
+    color: @textColor;
+}
+
+.menu  {
+    padding: 15px 0 15px 0;
+    background-color: @bgMenu;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 8px;
+    color: @textColor;
+}
+
+.menu .menu-active {
+    background-color: @bgActive;
+}
+
+.brends-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 90%;
+}
+
+.brends-list-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 90%;
+    color: #000;
+    transform: scale(0.7);
+}
+
+.brends-list-link:hover {
+    transform: scale(1);
+    transition: 0.3s;
+
+}
+
+.brends-icon {
+    display: inline-block;
+}
+
+.brends-text {
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+}
